@@ -37,6 +37,7 @@ public class Main {
         menu.setSize(500,300);
         menu.setLayout(null);
         menu.setVisible(true);
+        menu.setResizable(false);
         menu.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
     public static JButton btn_0 = new JButton(" ");
@@ -381,6 +382,7 @@ public class Main {
         display.setSize(500,500);
         display.setLayout(null);
         display.setVisible(true);
+        display.setResizable(false);
         display.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
     }
