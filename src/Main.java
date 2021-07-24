@@ -7,7 +7,7 @@ public class Main {
     public static char player = 'X';
     public static int x = 0;
     public static int o = 0;
-
+    //show menu
     public static void showMenu(){
         JFrame menu = new JFrame("OX GAME");
         JLabel label = new JLabel();
