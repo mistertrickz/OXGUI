@@ -7,15 +7,16 @@ public class Main {
     public static char player = 'X';
     public static int x = 0;
     public static int o = 0;
-    //show menu
+
     public static void showMenu(){
         JFrame menu = new JFrame("OX GAME");
         JLabel label = new JLabel();
         JButton btn_start = new JButton("Start");
 
         // btn_start
-        btn_start.setBounds(200,180,100,60);
-        btn_start.setFont(new Font(btn_start.getFont().getName(), btn_start.getFont().getStyle(), 15));
+        btn_start.setBounds(180,100,150,100);
+        btn_start.setBackground(Color.GREEN);
+        btn_start.setFont(new Font("Inconsolata",Font.BOLD, 30));
         btn_start.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -27,13 +28,13 @@ public class Main {
 
         //label
         label.setText("Welcome to OX GAME");
-        label.setBounds(60,30,500,50);
-        label.setFont(new Font(label.getFont().getName(), label.getFont().getStyle(), 30));
+        label.setBounds(120,30,500,50);
+        label.setFont(new Font("Inconsolata",Font.BOLD, 30));
 
         // menu
         menu.add(label, BorderLayout.NORTH);
         menu.add(btn_start);
-        menu.setSize(500,500);
+        menu.setSize(500,300);
         menu.setLayout(null);
         menu.setVisible(true);
         menu.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -75,44 +76,45 @@ public class Main {
         // X_label
         X_label.setText("X");
         X_label.setBounds(35,50,30,30);
-        X_label.setFont(new Font(X_label.getFont().getName(), X_label.getFont().getStyle(), 30));
+        X_label.setFont(new Font("Inconsolata",Font.BOLD, 30));
 
         // x_score
         x_score.setText(String.valueOf(x));
         x_score.setBounds(36,90,30,30);
-        x_score.setFont(new Font(X_label.getFont().getName(), X_label.getFont().getStyle(), 30));
+        x_score.setFont(new Font("Inconsolata",Font.BOLD,30));
 
         // x_turn
         x_turn.setText("It's your turn.");
         x_turn.setBounds(10,25,500,30);
-        x_turn.setFont(new Font(x_turn.getFont().getName(), x_turn.getFont().getStyle(), 13));
+        x_turn.setFont(new Font("Inconsolata",Font.BOLD, 13));
         x_turn.setVisible(true);
 
         // score
         score.setText(" ");
         score.setBounds(130,50,500,30);
-        score.setFont(new Font(score.getFont().getName(), score.getFont().getStyle(), 17));
+        score.setForeground(Color.RED);
+        score.setFont(new Font("Inconsolata",Font.BOLD, 17));
 
         // O_label
         O_label.setText("O");
         O_label.setBounds(430,50,30,30);
-        O_label.setFont(new Font(O_label.getFont().getName(), O_label.getFont().getStyle(), 30));
+        O_label.setFont(new Font("Inconsolata",Font.BOLD,30));
 
         // o_score
         o_score.setText(String.valueOf(o));
         o_score.setBounds(432,90,30,30);
-        o_score.setFont(new Font(X_label.getFont().getName(), X_label.getFont().getStyle(), 30));
+        o_score.setFont(new Font("Inconsolata",Font.BOLD, 30));
 
         // o_turn
         o_turn.setText("It's your turn.");
-        o_turn.setBounds(400,25,500,30);
-        o_turn.setFont(new Font(o_turn.getFont().getName(), o_turn.getFont().getStyle(), 13));
+        o_turn.setBounds(380,25,500,30);
+        o_turn.setFont(new Font("Inconsolata",Font.BOLD, 13));
         o_turn.setVisible(false);
 
         //btn_0
         btn_0.setText("0");
         btn_0.setBounds(100,100,100,100);
-        btn_0.setFont(new Font(btn_0.getFont().getName(), btn_0.getFont().getStyle(), 70));
+        btn_0.setFont(new Font("Inconsolata",Font.BOLD, 70));
         btn_0.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -136,7 +138,7 @@ public class Main {
         //btn_1
         btn_1.setText("1");
         btn_1.setBounds(200,100,100,100);
-        btn_1.setFont(new Font(btn_1.getFont().getName(), btn_1.getFont().getStyle(), 70));
+        btn_1.setFont(new Font("Inconsolata",Font.BOLD,70));
         btn_1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -161,7 +163,7 @@ public class Main {
         //btn_2
         btn_2.setText("2");
         btn_2.setBounds(300,100,100,100);
-        btn_2.setFont(new Font(btn_2.getFont().getName(), btn_2.getFont().getStyle(), 70));
+        btn_2.setFont(new Font("Inconsolata",Font.BOLD, 70));
         btn_2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -185,7 +187,7 @@ public class Main {
         //btn_3
         btn_3.setText("3");
         btn_3.setBounds(100,200,100,100);
-        btn_3.setFont(new Font(btn_3.getFont().getName(), btn_3.getFont().getStyle(), 70));
+        btn_3.setFont(new Font("Inconsolata",Font.BOLD, 70));
         btn_3.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -209,7 +211,7 @@ public class Main {
         //btn_4
         btn_4.setText("4");
         btn_4.setBounds(200,200,100,100);
-        btn_4.setFont(new Font(btn_4.getFont().getName(), btn_4.getFont().getStyle(), 70));
+        btn_4.setFont(new Font("Inconsolata",Font.BOLD, 70));
         btn_4.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -233,7 +235,7 @@ public class Main {
         //btn_5
         btn_5.setText("5");
         btn_5.setBounds(300,200,100,100);
-        btn_5.setFont(new Font(btn_5.getFont().getName(), btn_5.getFont().getStyle(), 70));
+        btn_5.setFont(new Font("Inconsolata",Font.BOLD, 70));
         btn_5.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -257,7 +259,7 @@ public class Main {
         //btn_6
         btn_6.setText("6");
         btn_6.setBounds(100,300,100,100);
-        btn_6.setFont(new Font(btn_6.getFont().getName(), btn_6.getFont().getStyle(), 70));
+        btn_6.setFont(new Font("Inconsolata",Font.BOLD, 70));
         btn_6.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -281,7 +283,7 @@ public class Main {
         //btn_7
         btn_7.setText("7");
         btn_7.setBounds(200,300,100,100);
-        btn_7.setFont(new Font(btn_7.getFont().getName(), btn_7.getFont().getStyle(), 70));
+        btn_7.setFont(new Font("Inconsolata",Font.BOLD, 70));
         btn_7.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -305,7 +307,7 @@ public class Main {
         //btn_8
         btn_8.setText("8");
         btn_8.setBounds(300,300,100,100);
-        btn_8.setFont(new Font(btn_8.getFont().getName(), btn_8.getFont().getStyle(), 70));
+        btn_8.setFont(new Font("Inconsolata",Font.BOLD, 70));
         btn_8.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -328,6 +330,7 @@ public class Main {
 
         //play_again
         play_again.setBounds(100,420,150,30);
+        play_again.setBackground(Color.GREEN);
         play_again.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -358,6 +361,7 @@ public class Main {
 
         //Exit
         exit.setBounds(420,420,60,30);
+        exit.setForeground(Color.RED);
         exit.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -417,7 +421,7 @@ public class Main {
             if(player == 'O'){
                 o += 1;
 //                System.out.println(o);
-                score.setText("This round Player O Win!");
+                score.setText("  This round Player O Win!");
                 btn_0.setEnabled(false);btn_1.setEnabled(false);btn_2.setEnabled(false);
                 btn_3.setEnabled(false);btn_4.setEnabled(false);btn_5.setEnabled(false);
                 btn_6.setEnabled(false);btn_7.setEnabled(false);btn_8.setEnabled(false);
@@ -425,7 +429,7 @@ public class Main {
             else if(player == 'X'){
                 x += 1;
 //                System.out.println(x);
-                score.setText("This round Player X Win!");
+                score.setText("  This round Player X Win!");
                 btn_0.setEnabled(false);btn_1.setEnabled(false);btn_2.setEnabled(false);
                 btn_3.setEnabled(false);btn_4.setEnabled(false);btn_5.setEnabled(false);
                 btn_6.setEnabled(false);btn_7.setEnabled(false);btn_8.setEnabled(false);
@@ -435,7 +439,7 @@ public class Main {
             count+=1;
         }
         if(count == 9){
-            score.setText("                 Draw!");
+            score.setText("           Draw!");
         }
 
     }
