@@ -80,7 +80,7 @@ public class Main {
 
         // x_score
         x_score.setText(String.valueOf(x));
-        x_score.setBounds(36,90,30,30);
+        x_score.setBounds(36,90,500,30);
         x_score.setFont(new Font("Inconsolata",Font.BOLD,30));
 
         // x_turn
@@ -102,7 +102,7 @@ public class Main {
 
         // o_score
         o_score.setText(String.valueOf(o));
-        o_score.setBounds(432,90,30,30);
+        o_score.setBounds(432,90,500,30);
         o_score.setFont(new Font("Inconsolata",Font.BOLD, 30));
 
         // o_turn
